@@ -10,7 +10,7 @@ create table StudentRegistrations
 (StudentId int not null,
 CourseCode nvarchar(50) not null,
 RegistrationDate date,
-constraint course_r primary key(StudentId,CourseCode)
+constraint pk_course primary key(StudentId,CourseCode)
 )
 select * from StudentRegistrations
 
